@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+ 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
@@ -15,6 +16,35 @@
     }</style>
     <style>
     body { background: url(https://oir.mobi/uploads/posts/2022-08/1661331004_1-oir-mobi-p-mramor-fon-vkontakte-1.png); }
+    
+    footer {
+      width: 100%;
+      float: left;
+      padding: 1%;
+      background-color: black;
+      border-top: 2px solid silver;
+      margin-top: 10px;
+    }
+
+    footer #social {
+      float: left;
+      width: 50%;
+    }
+
+    footer #social img {
+      width: 30px;
+      height: 30px;
+      float: left;
+      margin-right: 10px;
+    }
+
+    footer #rights {
+      float: right;
+      width: 50%;
+      text-align: right;
+      font-size: 1.1em;
+    }
+
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,7 +52,10 @@
     <link rel="manifest" href="/site.webmanifest">
    </head>
 <body>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <form id = "main-form">
+
+  </form>
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <a class="navbar-brand p-0" href="index.html">
             <img src="NS.png" alt="Logo" width="50">
@@ -65,9 +98,9 @@
  </div>
  <script>
 
-	var text = "Skvortsov Nikita Alexandrovich"; // Ваш текст
-	var delay = 100; // Скорость печатания
-	var elem = document.getElementById("result"); // id элемента для вывода результата
+	var text = "Skvortsov Nikita Alexandrovich"; 
+	var delay = 100; 
+	var elem = document.getElementById("result"); 
 
 	var print_text = function(text, elem, delay) {
     
@@ -90,8 +123,21 @@
 	}
 
 	print_text(text, elem, delay);
+
+ 
 	
 </script>
+<script src = "JS.js"></script>
 
+<footer>
+  <div id = "social">
+    <a href="https://vk.com/id252409296" title="Vk" target="_blank"> <img src="vk.png" alt="Vk" title="Vk"></a>
+    <a href="https://www.instagram.com/invites/contact/?i=xhd2d86ohi3o&utm_content=qym5bo" title="instagram" target="_blank"> <img src="insta.png" alt="Vk" title="instagram"></a>
+  </div>
+  <div id = "rights">
+    All rights reserved &copy;2022
+  </div>
+
+</footer>
 </body>
 </html>
